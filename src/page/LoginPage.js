@@ -17,7 +17,10 @@ const LoginPage = () => {
                 <input placeholder="아이디를 입력해주세요"></input>
               </div>
               <div className="pwd-wrapper">
-                <input placeholder="비밀번호를 입력해주세요"></input>
+                <input
+                  type="password"
+                  placeholder="비밀번호를 입력해주세요"
+                ></input>
               </div>
             </div>
             <div className="login-search">
