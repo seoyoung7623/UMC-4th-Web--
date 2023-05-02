@@ -36,7 +36,9 @@ const ItemContainer = () => {
             <div className="item">
               {itemList.map((it) => (
                 <div className="explain-one">
-                  <img src={it.img} />
+                  <div className="explain-img">
+                    <img src={it.img} />
+                  </div>
                   <div className="explain">
                     <div>{it.title}</div>
                     <div>{it.pay}</div>

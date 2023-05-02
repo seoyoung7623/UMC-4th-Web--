@@ -13,9 +13,12 @@
   width: 100vw;
   .recommend-wrapper {
     .main {
+      height: 800px;
+      display: flex;
+      flex-direction: column;
       .title {
-        height: 200px;
-        margin-bottom: 30px;
+        height: 100px;
+        margin-bottom: 80px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -34,22 +37,36 @@
 
           .explain-one {
             width: 249px;
+            height: 0px auto;
             margin-right: 18px;
-            overflow: hidden;
             img {
               width: 249px;
             }
           }
 
+          .explain-img {
+            width: 249px;
+            height: 321px;
+            overflow: hidden;
+          }
+
           .explain-one img {
             width: 249px;
-            transition: all 0.2s linear;
+            height: 0px auto;
+            transition: all 0.5s ease-in-out 0s;
           }
           .explain-one:hover img {
-            transform: scale(1.1);
+            height: 321px;
+            transform: scale(1.04);
           }
         }
       }
     }
   }
+}
+
+.adImg {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
 }
