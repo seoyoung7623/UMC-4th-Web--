@@ -14,6 +14,7 @@ const MainPage = () => {
       <AdContainer />
       <ItemContainer />
       <ItemList />
+      <br />
       <div className="adImg">
         <img src="https://product-image.kurly.com/banner/random-band/pc/img/bc2ee9ff-d327-4d41-afb8-de3aa236a74a.jpg" />
       </div>

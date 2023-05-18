@@ -12,7 +12,7 @@ function ItemEditPage() {
       <Header />
       <div className="productEdit-wrapper">
         <div className="main">
-          <ProductContainer />
+          <Product />
         </div>
       </div>
       <Footer />
