@@ -158,6 +158,7 @@
     }
   }
 }
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 
 //상품 추가 페이지
 .productEdit-wrapper {
@@ -170,4 +171,102 @@
     margin: 0px auto;
     letter-spacing: -0.6px;
   }
+}
+
+//상품 리스트
+.itemList-wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.item-list {
+  text-align: center;
+  width: 1050px;
+  .title {
+    height: 100px;
+    font-size: 18px;
+    font-family: "Noto Sans KR", sans-serif; //폰트 사용
+  }
+
+  .add-btn {
+    // display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 200px;
+    height: 52px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(95, 0, 128);
+    border: 0px none;
+  }
+}
+
+.item-wrapper {
+  text-align: center;
+  width: 1050px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  .item {
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .item-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// 상품 추가페이지
+.productadd-wrapper {
+  .input-set {
+    display: flex;
+  }
+  .input-wrapper {
+    position: relative;
+    height: 32px;
+    input {
+      font-size: 14px;
+      width: 200px;
+      height: 30px;
+      padding: 0px 11px 1px 15px;
+      border-radius: 4px;
+      border: 1px solid #dddddd;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333333;
+      outline: none;
+      box-sizing: border-box;
+    }
+  }
+  .input-wrapper-textarea {
+    position: relative;
+    height: 38px;
+    textarea {
+      font-size: 14px;
+      width: 300px;
+      height: 38px;
+      padding: 0px 11px 1px 15px;
+      border-radius: 4px;
+      border: 1px solid #dddddd;
+      // font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333333;
+      outline: none;
+      box-sizing: border-box;
+    }
+  }
+}
+.submit {
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  width: 200px;
+  height: 52px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(95, 0, 128);
+  border: 0px none;
 }
