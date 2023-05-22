@@ -4,6 +4,7 @@ import Main from "./page/MainPage";
 import LoginPage from "./page/LoginPage";
 import ItemPage from "./page/ItemPage";
 import ItemEditPage from "./page/ItemEditPage";
+import JoinPage from "./page/JoinPage";
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
       <div className="App">
         <Routes>
           <Route exact path="/" element={<Main />} />
-          <Route exact path="/login" element={<LoginPage />} />
-          <Route exact path="/item" element={<ItemPage />} />
-          <Route exact path="/item/edit" element={<ItemEditPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/item/:id" element={<ItemPage />} />
+          <Route path="/item/edit" element={<ItemEditPage />} />
+          <Route path="/join" element={<JoinPage />} />
         </Routes>
       </div>
     </BrowserRouter>

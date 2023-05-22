@@ -1,6 +1,13 @@
+import { useSelector } from "react-redux";
 import "./../../styled/Item.scss";
+import { useParams } from "react-router-dom";
 
 const ItemHeader = () => {
+  const { id } = useParams();
+
+  const item = useSelector((state) =>
+    state.products.products.find((item) => item.id === parseInt(id))
+  );
   return (
     <div main>
       <div className="product">
@@ -10,13 +17,13 @@ const ItemHeader = () => {
             <div className="explain-1">샛별배송</div>
             <div className="explain-2">
               <div className="explain-2-1">
-                <h1>[뚝심] 진한 갈비홍탕</h1>
+                <h1>{item.name}</h1>
                 <button></button>
               </div>
-              <h2>든든히 즐기는 얼큰 보양식</h2>
+              <h2>{item.detail}</h2>
             </div>
             <h2>
-              <span className="h2-1">10,900</span>
+              <span className="h2-1">{item.price}</span>
               <span className="h2-2">원</span>
             </h2>
             <div className="explain-3">

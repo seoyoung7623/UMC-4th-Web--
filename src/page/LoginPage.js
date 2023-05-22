@@ -1,9 +1,19 @@
+import KakaoLogin from "react-kakao-login";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import TopHeader from "../components/TopHeader";
 import "./../styled/LoginPage.scss";
 
 const LoginPage = () => {
+  const kakaoClientId = "565cade2d31f33e2aac2602ffb8eaa10";
+  const kakaoOnSuccess = async (data) => {
+    console.log(data);
+    const idToken = data.response.id_token; // 인가코드 백엔드로 전달
+  };
+  const kakaoOnFailure = (error) => {
+    console.log(error);
+  };
+
   return (
     <div className="main">
       <TopHeader />
@@ -35,6 +45,11 @@ const LoginPage = () => {
               <button className="join">
                 <span>회원가입</span>
               </button>
+              <KakaoLogin
+                token={kakaoClientId}
+                onSuccess={kakaoOnSuccess}
+                onFail={kakaoOnFailure}
+              />
             </div>
           </form>
         </div>
