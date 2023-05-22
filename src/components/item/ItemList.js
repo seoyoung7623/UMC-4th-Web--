@@ -3,14 +3,6 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import "./../../styled/Item.scss";
 
-const styledMain = styled.list`
-  display: flex;
-`;
-
-// const item = styled.item`
-//   display: flex;
-// `;
-
 function ItemList() {
   const products = useSelector((state) => state.products.products);
   const navigate = useNavigate();
@@ -25,7 +17,9 @@ function ItemList() {
           {products.map((product) => (
             <div className="item" key={product.id}>
               <div>
-                <h2 onClick={(e) => navigate(`/item`)}>{product.name}</h2>
+                <h2 onClick={(e) => navigate(`/item/${product.id}`)}>
+                  {product.name}
+                </h2>
               </div>
               <p>가격: {product.price} 원</p>
               <p>상품 설명: {product.detail}</p>

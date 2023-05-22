@@ -2,7 +2,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import TopHeader from "../components/TopHeader";
 import Product from "../components/item/Product";
-import ProductContainer from "../containers/ProductContainers";
 import "./../styled/Item.scss";
 
 function ItemEditPage() {
