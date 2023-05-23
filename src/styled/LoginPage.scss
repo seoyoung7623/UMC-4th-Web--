@@ -74,6 +74,7 @@
     }
   }
   &submit {
+    text-align: center;
     margin-top: 28px;
     .submit {
       display: block;
@@ -99,6 +100,9 @@
       color: rgb(95, 0, 128);
       background-color: rgb(255, 255, 255);
       border: 1px solid rgb(95, 0, 128);
+    }
+    .kakao-login {
+      margin: 10px;
     }
   }
 }

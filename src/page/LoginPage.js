@@ -45,11 +45,13 @@ const LoginPage = () => {
               <button className="join">
                 <span>회원가입</span>
               </button>
-              <KakaoLogin
-                token={kakaoClientId}
-                onSuccess={kakaoOnSuccess}
-                onFail={kakaoOnFailure}
-              />
+              <div className="kakao-login">
+                <KakaoLogin
+                  token={kakaoClientId}
+                  onSuccess={kakaoOnSuccess}
+                  onFail={kakaoOnFailure}
+                />
+              </div>
             </div>
           </form>
         </div>
