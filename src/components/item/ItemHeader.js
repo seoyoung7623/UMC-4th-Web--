@@ -12,7 +12,9 @@ const ItemHeader = () => {
     <div main>
       <div className="product">
         <div className="main">
-          <div className="itemImg"></div>
+          <div className="itemImg">
+            <img src={item.img} />
+          </div>
           <section className="explain">
             <div className="explain-1">샛별배송</div>
             <div className="explain-2">

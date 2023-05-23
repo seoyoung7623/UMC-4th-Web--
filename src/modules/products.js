@@ -12,7 +12,7 @@ export function addProduct(product) {
   };
 }
 
-// state
+// state 초기값
 const initialState = {
   products: [
     {
@@ -20,6 +20,7 @@ const initialState = {
       name: "사과",
       price: 12000,
       detail: "싱싱한 문경 사과!",
+      img: "https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1637924624422l0.jpeg",
     },
   ],
 };

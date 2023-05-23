@@ -13,9 +13,9 @@
     .itemImg {
       width: 430px;
       height: 552px;
-      background: url(https://img-cf.kurly.com/shop/data/goods/159719883649l0.jpg),
-        url(https://res.kurly.com/_next/static/images/noimg-150x195-2c819ff….svg)
-          no-repeat 50% 50%;
+      // background: url(https://img-cf.kurly.com/shop/data/goods/159719883649l0.jpg),
+      //   url(https://res.kurly.com/_next/static/images/noimg-150x195-2c819ff….svg)
+      //     no-repeat 50% 50%;
       -webkit-background-size: cover, contain;
       background-size: cover, contain;
       background-color: #f5f5f5;
@@ -165,6 +165,8 @@
   min-width: 1050px;
   margin-top: 90px;
   margin-bottom: 60px;
+  .item {
+  }
 
   .main {
     width: 340px;
@@ -208,6 +210,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   .item {
+    img {
+      width: 249px;
+      height: 321px;
+    }
   }
 }
 

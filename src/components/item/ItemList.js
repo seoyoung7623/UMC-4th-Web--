@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import styled from "styled-components";
+// import styled from "styled-components";
 import "./../../styled/Item.scss";
 
 function ItemList() {
@@ -16,6 +16,9 @@ function ItemList() {
         <div className="item-wrapper">
           {products.map((product) => (
             <div className="item" key={product.id}>
+              <div className="img">
+                <img src={product.img} alt="Preview" />
+              </div>
               <div>
                 <h2 onClick={(e) => navigate(`/item/${product.id}`)}>
                   {product.name}
