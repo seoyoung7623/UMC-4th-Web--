@@ -13,3 +13,13 @@
 
 
 - 5주차 라이프 사이클(useEffect), 훅
+- 6주차 Redux 상태관리 라이브러리
+상품등록&조회
+![image](https://github.com/seoyoung7623/UMC-4th-Web-Project/assets/96363792/ae8f4a00-1ef4-49bb-a8ec-ad69de7db5f4)
+![image](https://github.com/seoyoung7623/UMC-4th-Web-Project/assets/96363792/f1459ca5-8162-4a27-af1f-7639e56d90c2)
+
+- 7주차 스타일컴포넌트
+- 8주차 API
+카카오로그인
+![image](https://github.com/seoyoung7623/UMC-4th-Web-Project/assets/96363792/2dcb6846-b8ad-4eb7-9b8d-f4ea90496dfe)
+![image](https://github.com/seoyoung7623/UMC-4th-Web-Project/assets/96363792/24033b54-7711-48da-b12f-5154a4d00b35)
