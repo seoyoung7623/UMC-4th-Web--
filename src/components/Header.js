@@ -2,18 +2,27 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 // import CenterDropDown from "./DropDown/Center";
 
-const Header = () => {
+const Header = ({ email }) => {
   const [view, setView] = useState(false);
   return (
     <header className="header">
       <div className="header-main">
         <div className="login-meun-wrapper">
-          <div className="setting">
-            <a>회원가입 </a>
-          </div>
-          <div className="setting">
-            <Link to="/login">로그인 </Link>
-          </div>
+          {email ? (
+            <div className="setting">
+              <a>{email} 님 </a>
+            </div>
+          ) : (
+            <>
+              <div className="setting">
+                <a>회원가입{email} </a>
+              </div>
+              <div className="setting">
+                <Link to="/login">로그인 </Link>
+              </div>
+            </>
+          )}
+
           <div className="center">
             <a>고객센터</a>
             {/* <ul

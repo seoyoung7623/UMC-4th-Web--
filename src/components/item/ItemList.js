@@ -16,7 +16,7 @@ function ItemList() {
         <div className="item-wrapper">
           {products.map((product) => (
             <div className="item" key={product.id}>
-              <div className="img">
+              <div className="explain-img explain-one">
                 <img src={product.img} alt="Preview" />
               </div>
               <div>

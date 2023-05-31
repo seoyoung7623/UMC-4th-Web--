@@ -64,6 +64,21 @@
     }
   }
 }
+.explain-img {
+  width: 249px;
+  height: 321px;
+  overflow: hidden;
+}
+
+.explain-one img {
+  width: 249px;
+  height: 0px auto;
+  transition: all 0.5s ease-in-out 0s;
+}
+.explain-one:hover img {
+  height: 321px;
+  transform: scale(1.04);
+}
 
 .adImg {
   width: 1200px;

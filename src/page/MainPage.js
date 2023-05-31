@@ -6,12 +6,27 @@ import Footer from "../components/Footer";
 import "./../styled/MainPage.scss";
 import ItemList from "../components/item/ItemList";
 import WeatherApi from "../components/WeatherApi";
+// import jwt from "jsonwebtoken";
+import { useEffect, useState } from "react";
+function getToken() {
+  return localStorage.getItem("jwtToken");
+}
 
 const MainPage = () => {
+  const [email, setEmail] = useState("");
+
+  useEffect(() => {
+    const token = getToken();
+
+    if (token) {
+      setEmail("seoyoung7623@naver.com");
+    }
+  }, []);
+
   return (
     <div className="main">
       <TopHeader />
-      <Header />
+      <Header email={email} />
       <AdContainer />
       <ItemContainer />
       <ItemList />
